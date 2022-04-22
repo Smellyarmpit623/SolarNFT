@@ -12,6 +12,6 @@ def BuyNFTs():
     return render_template('BuyNFTs.html')
 
 if __name__ == "__main__":
-    host='192.168.0.198'
+    host='127.0.0.1'
     port=8080
     app.run(host,port,debug=True)
