@@ -7,8 +7,11 @@ app = Flask(__name__)             # create an application instance called app
 def index():
     return render_template('index.html')
 
+@app.route('/BuyNFTs')
+def BuyNFTs():
+    return render_template('BuyNFTs.html')
 
 if __name__ == "__main__":
-    host='127.0.0.1'
+    host='192.168.0.198'
     port=8080
     app.run(host,port,debug=True)
