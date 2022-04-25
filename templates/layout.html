@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Maisonnette</title>
+    <title>Green Coin Trading</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='assets/lib/stroke-7/style.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='assets/lib/perfect-scrollbar/css/perfect-scrollbar.css') }}"/>
@@ -38,7 +38,7 @@
 
                                     <li class="nav-item parent"><a class="nav-link" href="#" role="button" aria-expanded="false"><span class="icon s7-diamond"></span><span>Investments</span></a>
                                       <ul class="mai-nav-tabs-sub mai-sub-nav nav">
-                                                  <li class="nav-item"><a class="nav-link" href="tables-general.html"><span class="icon s7-box2"></span><span class="name">Solar-NFTs</span></a>
+                                                  <li class="nav-item"><a class="nav-link" href="/buy_nfts"><span class="icon s7-box2"></span><span class="name">Solar-NFTs</span></a>
                                                   </li>
                                                   <li class="nav-item"><a class="nav-link" href="tables-datatables.html"><span class="icon s7-box2"></span><span class="name">Spot-Futures arbitrage</span></a>
                                                   </li>
@@ -46,10 +46,10 @@
                                                   </li>
                                       </ul>
                                     </li>
-                                    <li class="nav-item parent"><a class="nav-link" href="#" role="button" aria-expanded="false"><span class="icon s7-portfolio"></span><span>Option-Trading</span></a>
+                                    <li class="nav-item parent"><a class="nav-link" href="#" role="button" aria-expanded="false"><span class="icon s7-portfolio"></span><span>Option-Spot Trading</span></a>
                                       <ul class="mai-nav-tabs-sub mai-sub-nav nav">
 
-                                                  <li class="nav-item"><a class="nav-link" href="pages-pricing-tables.html"><span class="icon s7-cash"></span><span class="name">Green-Coin Option</span></a>
+                                                  <li class="nav-item"><a class="nav-link" href="pages-pricing-tables.html"><span class="icon s7-cash"></span><span class="name">Green-Coin</span></a>
                                                   </li>
                                                   <li class="nav-item"><a class="nav-link" href="pages-invoice.html"><span class="icon s7-wallet"></span><span class="name">Invoice</span></a>
                                                   </li>
@@ -118,138 +118,32 @@
           </div>
         </div>
       </nav>
-      <div class="main-content container">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="widget widget-fullwidth user-develop-chart">
-              <div class="widget-head">
-                <div class="tools"><span class="icon s7-cloud-download"></span><span class="icon s7-refresh-2"></span></div><span class="title">Solar Panel Yield</span>
-              </div>
-              <div class="widget-chart-container">
-                <div class="legend-container" id="develop-chart-legend"></div>
-                <div id="develop-chart" style="height: 225px;"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="widget-indicators">
-              <div class="indicator-item">
-                <div class="indicator-item-icon">
-                  <div class="icon"><span class="s7-graph1"></span></div>
-                </div>
-                <div class="indicator-item-value"><span class="indicator-value-counter" data-toggle="counter" data-end="36"></span>
-                  <div class="indicator-value-title">Today's Yield(Kw/h)</div>
-                </div>
-              </div>
-              <div class="indicator-item">
-                <div class="indicator-item-icon">
-                  <div class="icon"><span class="s7-graph"></span></div>
-                </div>
-                <div class="indicator-item-value"><span class="indicator-value-counter" data-toggle="counter" data-end="157">0</span>
-                  <div class="indicator-value-title">Total Yield Of The Week</div>
-                </div>
-              </div>
-              <div class="indicator-item">
-                <div class="indicator-item-icon">
-                  <div class="icon"><span class="s7-graph3"></span></div>
-                </div>
-                <div class="indicator-item-value"><span class="indicator-value-counter" data-toggle="counter" data-decimals="1" data-end="17.9">0</span>
-                  <div class="indicator-value-title">Profit Of The Week (as in USDT)</div>
-                </div>
-              </div>
-              <div class="indicator-item">
-                <div class="indicator-item-icon">
-                  <div class="icon"><span class="s7-cart"></span></div>
-                </div>
-                <div class="indicator-item-value"><span class="indicator-value-counter" data-toggle="counter" data-decimals="2" data-end="78,450" data-prefix="$">0</span>
-                  <div class="indicator-value-title">Bids On The Solar Panel</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="widget widget-fullwidth week-chart">
-              <div class="widget-head"><span class="title">Profit In Total</span></div>
-              <div class="widget-chart-container">
-                <div id="week-chart" style="height: 215px;"></div>
-              </div>
-              <div class="row widget-info">
-                <div class="col-6 counter-block"><span class="counter" data-toggle="counter" data-end="735"></span><span class="title">P&L as in USDT</span></div>
-                <div class="col-6 counter-block"><span class="counter" data-toggle="counter" data-end="73" data-suffix="%">0</span><span class="title">Percentage Gain</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="user-stats">
-              <div class="user-stats-id">
-                <div class="user-stats-avatar"><img src="assets/img/avatars/img3.jpg" alt="avatar"><span class="user-stats-status-indicator online"></span></div>
-                <div class="user-stats-info"><span class="user-stats-name">Solar Farm QLD119A</span><span class="user-stats-position">In progress</span></div>
-              </div>
-              <div class="user-stats-indicators">
-                <div class="user-stats-indicator"><span class="user-stats-indicator-title">Solar Panel Built So Far</span><span class="user-stats-indicator-counter" data-toggle="counter" data-end="173">0</span></div>
-                <div class="user-stats-indicator"><span class="user-stats-indicator-title">Solar Panel Pre-Purchased So Far </span><span class="user-stats-indicator-counter" data-toggle="counter" data-end="367">0</span></div>
-                <div class="user-stats-indicator"><span class="user-stats-indicator-title">Price </span><span class="user-stats-indicator-counter" data-toggle="counter" data-end="724">0</span></div>
-                <div class="user-stats-indicator"><span class="user-stats-indicator-title">Plan To Build </span><span class="user-stats-indicator-counter" data-toggle="counter" data-end="1264">0</span></div>
-              </div>
-              <div class="user-stats-milestone"><span>Current Progress</span>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-primary" style="width: 45%"></div>
-                </div>
-              </div><a class="user-stats-more-details" href="#">More Details</a>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="widget widget-fullwidth ads-chart">
-              <div class="widget-head"><span class="title">Market</span></div>
-              <div class="ads-resume">
-                <div class="ads-info">
-                  <div class="ads-progress"><span class="ads-progress-counter" data-toggle="counter" data-end="55" data-suffix="%">0</span><span class="ads-progress-title">Green-Coin Sold</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" style="width: 55%"></div>
-                    </div>
-                  </div>
-                  <div class="ads-legend" id="ads-chart-legend"></div>
-                </div>
-                <div class="ads-users">
-                  <div class="widget-chart-container">
-                    <div id="users-chart" style="height: 153px;"></div>
-                    <div class="users-chart-counter"><span class="users-counter" data-toggle="counter" data-end="1207">0</span><span class="users-title">Transaction Today</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="widget-chart-container">
-                <div id="ads-chart" style="height: 229px;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+
 
 
       </div>
-    </div>
-{% block content %} {% endblock %}
-    <script src="{{ url_for('static',filename='assets/lib/jquery/jquery.min.js') }}" type="text/javascript"></script>
-    <script src="{{ url_for('static',filename='assets/lib/perfect-scrollbar/js/perfect-scrollbar.min.js') }}" type="text/javascript"></script>
-    <script src="{{ url_for('static',filename='assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js') }}" type="text/javascript"></script>
-    <script src="{{ url_for('static',filename='assets/js/app.js') }}" type="text/javascript"></script>
-    <script src="{{ url_for('static',filename='assets/lib/jquery-flot/jquery.flot.js') }}" type="text/javascript"></script>
-    <script src="{{ url_for('static',filename='assets/lib/jquery-flot/jquery.flot.pie.js') }}" type="text/javascript"></script>
-    <script src="{{ url_for('static',filename='assets/lib/jquery-flot/jquery.flot.time.js') }}" type="text/javascript"></script>
-    <script src="{{ url_for('static',filename='assets/lib/jquery-flot/jquery.flot.resize.js') }}" type="text/javascript"></script>
-    <script src="{{ url_for('static',filename='assets/lib/jquery-flot/plugins/jquery.flot.orderBars.js') }}" type="text/javascript"></script>
-    <script src="{{ url_for('static',filename='assets/lib/jquery-flot/plugins/curvedLines.js') }}" type="text/javascript"></script>
-    <script src="{{ url_for('static',filename='assets/lib/jquery-flot/plugins/jquery.flot.tooltip.js') }}" type="text/javascript"></script>
-    <script src="{{ url_for('static',filename='assets/lib/countup/countUp.min.js') }}" type="text/javascript"></script>
-    <script src="{{ url_for('static',filename='assets/js/app-dashboard.js') }}" type="text/javascript"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-      	//-initialize the javascript
-      	App.init();
-      	App.dashboard();
-      });
-    </script>
+
+
+{% block content %}
+
+{% endblock %}
+    </body>
+<script src="{{ url_for('static',filename='assets/lib/jquery/jquery.min.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static',filename='assets/lib/perfect-scrollbar/js/perfect-scrollbar.min.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static',filename='assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static',filename='assets/js/app.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static',filename='assets/lib/jquery-flot/jquery.flot.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static',filename='assets/lib/jquery-flot/jquery.flot.pie.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static',filename='assets/lib/jquery-flot/jquery.flot.time.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static',filename='assets/lib/jquery-flot/jquery.flot.resize.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static',filename='assets/lib/jquery-flot/plugins/jquery.flot.orderBars.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static',filename='assets/lib/jquery-flot/plugins/curvedLines.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static',filename='assets/lib/jquery-flot/plugins/jquery.flot.tooltip.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static',filename='assets/lib/countup/countUp.min.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static',filename='assets/js/app-dashboard.js') }}" type="text/javascript"></script>
+{% block js_content %}
+
+{% endblock %}
 </body>
 
 </html>

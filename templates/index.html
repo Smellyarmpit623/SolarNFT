@@ -1,6 +1,121 @@
 {% extends'layout.html' %}
 {% block content %}
 
-
-
+<div class="main-content container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="widget widget-fullwidth user-develop-chart">
+              <div class="widget-head">
+                <div class="tools"><span class="icon s7-cloud-download"></span><span class="icon s7-refresh-2"></span></div><span class="title">Solar Panel Yield</span>
+              </div>
+              <div class="widget-chart-container">
+                <div class="legend-container" id="develop-chart-legend"></div>
+                <div id="develop-chart" style="height: 225px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="widget-indicators">
+              <div class="indicator-item">
+                <div class="indicator-item-icon">
+                  <div class="icon"><span class="s7-graph1"></span></div>
+                </div>
+                <div class="indicator-item-value"><span class="indicator-value-counter" data-toggle="counter" data-end="36"></span>
+                  <div class="indicator-value-title">Today's Yield(Kw/h)</div>
+                </div>
+              </div>
+              <div class="indicator-item">
+                <div class="indicator-item-icon">
+                  <div class="icon"><span class="s7-graph"></span></div>
+                </div>
+                <div class="indicator-item-value"><span class="indicator-value-counter" data-toggle="counter" data-end="157">0</span>
+                  <div class="indicator-value-title">Total Yield Of The Week</div>
+                </div>
+              </div>
+              <div class="indicator-item">
+                <div class="indicator-item-icon">
+                  <div class="icon"><span class="s7-graph3"></span></div>
+                </div>
+                <div class="indicator-item-value"><span class="indicator-value-counter" data-toggle="counter" data-decimals="1" data-end="17.9">0</span>
+                  <div class="indicator-value-title">Profit Of The Week (as in USDT)</div>
+                </div>
+              </div>
+              <div class="indicator-item">
+                <div class="indicator-item-icon">
+                  <div class="icon"><span class="s7-cart"></span></div>
+                </div>
+                <div class="indicator-item-value"><span class="indicator-value-counter" data-toggle="counter" data-decimals="2" data-end="78,450" data-prefix="$">0</span>
+                  <div class="indicator-value-title">Bids On The Solar Panel</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget widget-fullwidth week-chart">
+              <div class="widget-head"><span class="title">Profit In Total</span></div>
+              <div class="widget-chart-container">
+                <div id="week-chart" style="height: 215px;"></div>
+              </div>
+              <div class="row widget-info">
+                <div class="col-6 counter-block"><span class="counter" data-toggle="counter" data-end="735"></span><span class="title">P&L as in USDT</span></div>
+                <div class="col-6 counter-block"><span class="counter" data-toggle="counter" data-end="73" data-suffix="%">0</span><span class="title">Percentage Gain</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="user-stats">
+              <div class="user-stats-id">
+                <div class="user-stats-avatar"><img src="{{ url_for('static',filename='assets/img/avatars/img3.jpg') }}" alt="avatar"><span class="user-stats-status-indicator online"></span></div>
+                <div class="user-stats-info"><span class="user-stats-name">Solar Farm QLD119A</span><span class="user-stats-position">In progress</span></div>
+              </div>
+              <div class="user-stats-indicators">
+                <div class="user-stats-indicator"><span class="user-stats-indicator-title">Solar Panel Built So Far</span><span class="user-stats-indicator-counter" data-toggle="counter" data-end="173">0</span></div>
+                <div class="user-stats-indicator"><span class="user-stats-indicator-title">Solar Panel Pre-Purchased So Far </span><span class="user-stats-indicator-counter" data-toggle="counter" data-end="367">0</span></div>
+                <div class="user-stats-indicator"><span class="user-stats-indicator-title">Price </span><span class="user-stats-indicator-counter" data-toggle="counter" data-end="724">0</span></div>
+                <div class="user-stats-indicator"><span class="user-stats-indicator-title">Plan To Build </span><span class="user-stats-indicator-counter" data-toggle="counter" data-end="1264">0</span></div>
+              </div>
+              <div class="user-stats-milestone"><span>Current Progress</span>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-primary" style="width: 45%"></div>
+                </div>
+              </div><a class="user-stats-more-details" href="#">More Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="widget widget-fullwidth ads-chart">
+              <div class="widget-head"><span class="title">Market</span></div>
+              <div class="ads-resume">
+                <div class="ads-info">
+                  <div class="ads-progress"><span class="ads-progress-counter" data-toggle="counter" data-end="55" data-suffix="%">0</span><span class="ads-progress-title">Green-Coin Sold</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" style="width: 55%"></div>
+                    </div>
+                  </div>
+                  <div class="ads-legend" id="ads-chart-legend"></div>
+                </div>
+                <div class="ads-users">
+                  <div class="widget-chart-container">
+                    <div id="users-chart" style="height: 153px;"></div>
+                    <div class="users-chart-counter"><span class="users-counter" data-toggle="counter" data-end="1207">0</span><span class="users-title">Transaction Today</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="widget-chart-container">
+                <div id="ads-chart" style="height: 229px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+{%  endblock %}
+{% block js_content %}
+<script type="text/javascript">
+      $(document).ready(function(){
+      	//-initialize the javascript
+      	App.init();
+      	App.dashboard();
+      });
+</script>
 {%  endblock %}

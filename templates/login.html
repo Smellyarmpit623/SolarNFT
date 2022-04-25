@@ -1,0 +1,46 @@
+{% extends'layout.html' %}
+{% block content %}
+<body class="mai-splash-screen">
+    <div class="mai-wrapper mai-login">
+      <div class="main-content container">
+        <div class="splash-container row">
+          <div class="col-md-6 user-message"><span class="splash-message text-right">Hello!<br> is good to<br> see you again</span><span class="alternative-message text-right">Don't have an account? <a href="pages-sign-up.html">Sign Up</a></span></div>
+          <div class="col-md-6 form-message"><img class="logo-img mb-4" src="assets/img/logo-2x.png" alt="logo" width="169" height="28"><span class="splash-description text-center mt-5 mb-5">Login to your account</span>
+            <form>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend"><i class="icon s7-user"></i></div>
+                  <input class="form-control" id="username" type="text" placeholder="Username" autocomplete="off">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend"><i class="icon s7-lock"></i></div>
+                  <input class="form-control" id="password" type="password" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group login-submit"><a class="btn btn-lg btn-primary btn-block" href="index.html" data-dismiss="modal">Login</a></div>
+              <div class="form-group row login-tools">
+                <div class="col-sm-6 login-remember">
+                  <label class="custom-control custom-checkbox mt-2">
+                    <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Remember me</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 pt-2 text-sm-right login-forgot-password"><a href="pages-forgot-password.html">Forgot Password?</a></div>
+              </div>
+            </form>
+            <div class="out-links"><a href="#">© 2022 TrueGreen</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+{%  endblock %}
+{% block js_content %}
+<script type="text/javascript">
+      $(document).ready(function(){
+      	//-initialize the javascript
+      	App.init();
+      });
+
+    </script>
+{%  endblock %}

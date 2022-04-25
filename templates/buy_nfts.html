@@ -1,0 +1,33 @@
+{% extends'layout.html' %}
+{% block content %}
+<div class="row pricing-tables">
+        {% for i in range(1,10) %}
+          <div class="col-md-3">
+            <div class="pricing-table pricing-table-dark">
+              <div class="pricing-table-title">Solar-A1{{i}} NFT</div>
+              <div class="pricing-table-price"><span class="currency">Green-Coin</span><span class="value">1000</span></div>
+              <div class="pricing-table-frecuency">10% Ownership</div>
+              <div class="card-divider card-divider-xl"></div>
+              <ul class="pricing-table-features">
+                <li><b>130 Green-Coin</b> Average return annually </li>
+                <li><b>250% </b> Potential return</li>
+                <li><b>LifeTime</b> membership with TrueGreen Investment department</li>
+              </ul><a class="btn btn-outline-primary" href="#">Purchase now</a>
+            </div>
+          </div>
+
+        {% endfor %}
+
+</div>
+
+{%  endblock %}
+
+{% block js_content %}
+<script type="text/javascript">
+      $(document).ready(function(){
+      	//-initialize the javascript
+      	App.init();
+      	App.dashboard();
+      });
+</script>
+{% endblock %}

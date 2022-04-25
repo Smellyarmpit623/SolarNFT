@@ -49,11 +49,11 @@ var App = (function () {
       ];
 
       var plot_statistics = $.plot($("#develop-chart"), [{
-        data: data_com, showLabels: true, label: "Purchases", labelPlacement: "below", canvasRender: true, cColor: "#FFFFFF" 
+        data: data_com, showLabels: true, label: "This Week", labelPlacement: "below", canvasRender: true, cColor: "#FFFFFF"
       },{
-        data: data_com2, showLabels: true, label: "Plans", labelPlacement: "below", canvasRender: true, cColor: "#FFFFFF" 
+        data: data_com2, showLabels: true, label: "Last Week", labelPlacement: "below", canvasRender: true, cColor: "#FFFFFF"
       },{
-        data: data_com3, showLabels: true, label: "Services", labelPlacement: "below", canvasRender: true, cColor: "#FFFFFF" 
+        data: data_com3, showLabels: true, label: "Total Yield", labelPlacement: "below", canvasRender: true, cColor: "#FFFFFF"
       }],
       {
         series: {
