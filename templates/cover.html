@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Cover Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="{{ url_for('static',filename='assets//dist//css//bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='assets//dist//css//signin.css') }}" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      #background-video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static',filename='cover.css') }}" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+
+<div class="cover-container d-flex w-25 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Heliosphere</h3>
+
+    </div>
+  </header>
+  </body>
+<body class="text-center">
+  <main class="form-signin">
+    <video autoplay muted loop id="background-video">
+  <source src="{{ url_for('static',filename='Clouds_background_video.mp4') }}" type="video/mp4">
+</video>
+    <h1>Login</h1>
+      <form method="POST">
+
+
+    <label for="inputUsername" class="visually-hidden">Username</label>
+    <input type="username" name="inputUsername" class="form-control" placeholder="Username" style="line-height: 190%" required autofocus>
+    <label for="inputPassword" class="visually-hidden">Password</label>
+    <input type="password" name="inputPassword" class="form-control" placeholder="Password" style="line-height: 190%" required>
+    <button class="w-100 btn btn-lg btn-warning" type="submit">Sign in</button>
+
+  </form>
+
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p>Developed by Steve Wen</p>
+  </footer>
+</div>
+
+
+    
+  </body>
+</html>
