@@ -11,7 +11,7 @@ app = Flask(__name__)             # create an application instance called app
 app.config['SECRET_KEY'] = 'allahuakbar'
 
 def con_db():
-    con=sqlite3.connect("C:\\Users\\Administrator\\Documents\\GitHub\\SolarNFT\\Solar.db",check_same_thread=False)
+    con=sqlite3.connect("C:\\Users\\13616\\OneDrive\\Desktop\\Solar\\SolarNFT\\Solar.db",check_same_thread=False)
     con.row_factory=sqlite3.Row
     return con
 
@@ -80,14 +80,22 @@ def buy_coin():
         return render_template('buy_coin.html')
     return redirect(url_for('cover'))
 
+@app.route('/option_yield')
+def option_yield():
+    if 'user_name' in session:
+        return render_template('option_yield.html')
+    return redirect(url_for('cover'))
+
 @app.route('/logout')
 def logout():
     session.pop('user_id', None)
     return redirect(url_for('cover'))
 
 
+
+
 if __name__ == "__main__":
-    host='192.168.0.198'
+    host='127.0.0.1'
     port=8080
     app.run(host,port,debug=True)
 

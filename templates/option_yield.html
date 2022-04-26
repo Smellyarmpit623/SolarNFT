@@ -1,0 +1,199 @@
+{% extends'layout.html' %}
+{% block content %}
+
+<div class="main-content container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card card-default card-table">
+              <div class="card-header">Call Option
+                <div class="tools"><span class="icon s7-cloud-download"></span><span class="icon s7-edit"></span></div>
+              </div>
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th style="">Strike Yield</th>
+                      <th style="">Expire Date</th>
+                      <th class="number">Price</th>
+                      <th class="number">Implied Volatility</th>
+                      <th class="actions">Select</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class=>100 Kw/h</td>
+                      <td>26/04/2022</td>
+                      <td class="number">3.3</td>
+                      <td class="number">22.2</td>
+                      <td class="actions"><a class="icon" href="#"><i class="s7-check"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td class=>105 Kw/h</td>
+                      <td>26/04/2022</td>
+                      <td class="number">3.0</td>
+                      <td class="number">20.3</td>
+                      <td class="actions"><a class="icon" href="#"><i class="s7-check"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td class=>115 Kw/h</td>
+                      <td>26/04/2022</td>
+                      <td class="number">1.5</td>
+                      <td class="number">13.8</td>
+                      <td class="actions"><a class="icon" href="#"><i class="s7-check"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td class=>130 Kw/h</td>
+                      <td>26/04/2022</td>
+                      <td class="number">0.8</td>
+                      <td class="number">8.9</td>
+                      <td class="actions"><a class="icon" href="#"><i class="s7-check"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-6">
+            <div class="card card-default card-table">
+              <div class="card-header">Put Option
+                <div class="tools"><span class="icon s7-cloud-download"></span><span class="icon s7-edit"></span></div>
+              </div>
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th style="">Strike Yield</th>
+                      <th style="">Expire Date</th>
+                      <th class="number">Price</th>
+                      <th class="number">Implied Volatility</th>
+                      <th class="actions">Select</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class=>100 Kw/h</td>
+                      <td>26/04/2022</td>
+                      <td class="number">0.9</td>
+                      <td class="number">22.2</td>
+                      <td class="actions"><a class="icon" href="#"><i class="s7-check"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td class=>105 Kw/h</td>
+                      <td>26/04/2022</td>
+                      <td class="number">1.58</td>
+                      <td class="number">19.8</td>
+                      <td class="actions"><a class="icon" href="#"><i class="s7-check"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td class=>115 Kw/h</td>
+                      <td>26/04/2022</td>
+                      <td class="number">2.2</td>
+                      <td class="number">13.57</td>
+                      <td class="actions"><a class="icon" href="#"><i class="s7-check"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td class=>130 Kw/h</td>
+                      <td>26/04/2022</td>
+                      <td class="number">3.1</td>
+                      <td class="number">8.98</td>
+                      <td class="actions"><a class="icon" href="#"><i class="s7-check"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    <div class="row">
+          <div class="col-md-6">
+            <div class="card card-default">
+              <div class="card-body" style="background-color: black;color: whitesmoke">
+                <form>
+
+                    <div class="form-group row row mt-4">
+                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Market Option</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                      <select class="select2">
+
+                          <option value="MP">Market Price</option>
+                          <option value="LM">Limit</option>
+
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Price</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                      <input class="form-control form-control-sm" type="number" step="0.01" placeholder="0.04">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Amount</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                      <input class="form-control form-control-sm" type="number" step="0.01" placeholder="0.00">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                      <p class="text-right">
+                        <button class="btn btn-space btn-danger" type="submit">Sell</button>
+                      </p>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card card-default">
+
+              <div class="card-body" style="background-color: black;color: whitesmoke">
+                <form>
+
+                    <div class="form-group row row mt-4">
+                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Market Option</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                      <select class="select2">
+                          <option value="MP">Market Price</option>
+                          <option value="LM">Limit</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Price</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                      <input class="form-control form-control-sm" type="number" step="0.01" placeholder="0.04">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Amount</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                      <input class="form-control form-control-sm" type="number" step="0.01" placeholder="0.00">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                      <p class="text-right">
+                        <button class="btn btn-space btn-primary" type="submit">Buy</button>
+                      </p>
+                  </div>
+                </form>
+
+              </div>
+              </div>
+            </div>
+</div>
+</div>
+
+
+{% endblock %}
+{% block js_content %}
+<script type="text/javascript">
+      $(document).ready(function(){
+      	//-initialize the javascript
+      	App.init();
+      	App.dashboard();
+      });
+</script>
+{% endblock %}
