@@ -19,33 +19,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3459801-9f50-4584-8b56-d3682c8cd7f6" name="Default Changelist" comment="" />
+    <list default="true" id="066b01b7-10cc-434c-ab4e-ee95cb383aee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solar.db" beforeDir="false" afterPath="$PROJECT_DIR$/Solar.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cover.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cover.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="288HagM9j1SGYIPhKPHVuR8aVY9" />
+  <component name="ProjectId" id="28Hilx6pZJ3N7qDVonvQoPsebXq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="DatabaseDriversLRU" value="cassandra" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive - St Pauls School/Digital Solution/Working files/Unit 2/IA2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,12 +82,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c3459801-9f50-4584-8b56-d3682c8cd7f6" name="Default Changelist" comment="" />
-      <created>1650591357814</created>
+      <changelist id="066b01b7-10cc-434c-ab4e-ee95cb383aee" name="Default Changelist" comment="" />
+      <created>1650880066903</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1650591357814</updated>
-      <workItem from="1650591359566" duration="3020000" />
+      <updated>1650880066903</updated>
+      <workItem from="1650880071157" duration="183000" />
+      <workItem from="1650880259588" duration="7235000" />
     </task>
     <servers />
   </component>
@@ -106,24 +107,36 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1650593842822">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1650885754405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1650593842822" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1650593842822">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1650885754405" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1650881904421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1650593842822" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1650593842822">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1650881904421" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1650886173014">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1650593842822" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1650593842822">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1650886173014" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1650886173014">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1650593842822" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1650886173014" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1650886173014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1650886173014" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1650886173014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1650886173014" />
+    <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1650885740140">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1650885740140" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SolarNFT$SolarNFT.coverage" NAME="SolarNFT Coverage Results" MODIFIED="1650593842805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/SolarNFT$SolarNFT.coverage" NAME="SolarNFT Coverage Results" MODIFIED="1650886173007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
