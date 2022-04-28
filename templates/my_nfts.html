@@ -1,0 +1,35 @@
+{% extends'layout.html' %}
+{% block content %}
+
+<div class="main-content container">
+        <div class="user-profile">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="user-display">
+                <div class="user-display-cover"><img src="{{ url_for('static',filename='assets/img/cover.jpg') }}" alt="cover"></div>
+                <div class="user-display-bottom">
+                  <div class="user-display-id"><img class="user-display-avatar" src="{{ url_for('static',filename='assets/img/avatars/img3.jpg') }}" alt="avatar">
+                    <div class="user-display-name">Solar NFTs</div>
+                  </div>
+                  <div class="user-display-stats">
+                    <div class="user-display-stat"><span class="user-display-stat-counter">3</span><span class="user-display-stat-title">Owns</span></div>
+                    <div class="user-display-stat"><span class="user-display-stat-counter">165 </span><span class="user-display-stat-title">Total profit</span></div>
+                    <div class="user-display-stat"><span class="user-display-stat-counter">4300 </span><span class="user-display-stat-title">Market value</span></div>
+                    <div class="user-display-stat"><span class="user-display-stat-counter">2</span><span class="user-display-stat-title">Bids on NFTs</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+{%  endblock %}
+{% block js_content %}
+<script type="text/javascript">
+      $(document).ready(function(){
+      	//-initialize the javascript
+      	App.init();
+      	App.dashboard();
+      });
+</script>
+{%  endblock %}

@@ -91,7 +91,23 @@ def logout():
     session.pop('user_id', None)
     return redirect(url_for('cover'))
 
+@app.route('/my_nfts')
+def my_nfts():
+    if 'user_name' in session:
+        return render_template('my_nfts.html')
+    return redirect(url_for('cover'))
 
+@app.route('/wallet')
+def wallet():
+    if 'user_name' in session:
+        return render_template('wallet.html')
+    return redirect(url_for('cover'))
+
+@app.route('/register_nfts')
+def register_nfts():
+    if 'user_name' in session:
+        return render_template('register_nfts.html')
+    return redirect(url_for('cover'))
 
 
 if __name__ == "__main__":

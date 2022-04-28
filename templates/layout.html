@@ -24,11 +24,11 @@
                                                   </li>
 
                                                   <li class="nav-item dropdown parent"><a class="nav-link" href="ui-elements.html" data-toggle="dropdown"><span class="icon s7-diamond"></span><span class="name">My Asset</span></a>
-                                                              <div class="dropdown-menu mai-sub-nav" role="menu"><a class="dropdown-item" href="ui-alerts.html">NFTs</a><a class="dropdown-item" href="ui-icons.html">Crypto</a>
+                                                              <div class="dropdown-menu mai-sub-nav" role="menu"><a class="dropdown-item" href="/my_nfts">NFTs</a><a class="dropdown-item" href="ui-icons.html">Crypto</a>
                                                               </div>
                                                   </li>
                                                   <li class="nav-item dropdown parent"><a class="nav-link" href="plugins.html" data-toggle="dropdown"><span class="icon s7-plugin"></span><span class="name">My Block Chain</span></a>
-                                                              <div class="dropdown-menu mai-sub-nav" role="menu"><a class="dropdown-item" href="ui-modals.html">Wallets</a><a class="dropdown-item" href="ui-nestable-lists.html">Register NFTs</a><a class="dropdown-item" href="ui-notifications.html">Virtual Wallets</a>
+                                                              <div class="dropdown-menu mai-sub-nav" role="menu"><a class="dropdown-item" href="/wallet">Wallets</a><a class="dropdown-item" href="/register_nfts">Register NFTs</a>
                                                               </div>
                                                   </li>
                                                   <li class="nav-item"><a class="nav-link" href="documentation.html"><span class="icon s7-notebook"></span><span class="name">Documentation</span></a>
@@ -46,7 +46,7 @@
                                                   </li>
                                       </ul>
                                     </li>
-                                    <li class="nav-item parent"><a class="nav-link" href="#" role="button" aria-expanded="false"><span class="icon s7-portfolio"></span><span>Option-Spot Trading</span></a>
+                                    <li class="nav-item parent"><a class="nav-link" href="#" role="button" aria-expanded="false"><span class="icon s7-portfolio"></span><span>Buy Coins and Option</span></a>
                                       <ul class="mai-nav-tabs-sub mai-sub-nav nav">
 
                                                   <li class="nav-item"><a class="nav-link" href="/buy_coin"><span class="icon s7-cash"></span><span class="name">Green-Coin</span></a>
@@ -105,6 +105,14 @@
 <script src="{{ url_for('static',filename='assets/lib/jquery-flot/plugins/jquery.flot.tooltip.js') }}" type="text/javascript"></script>
 <script src="{{ url_for('static',filename='assets/lib/countup/countUp.min.js') }}" type="text/javascript"></script>
 <script src="{{ url_for('static',filename='assets/js/app-dashboard.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static',filename='assets/js/app-ui-notifications.js') }}" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    //-initialize the javascript
+    App.init();
+    App.uiNotifications();
+  });
+</script>
 {% block js_content %}
 
 {% endblock %}
