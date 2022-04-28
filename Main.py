@@ -64,26 +64,26 @@ def cover():
 @app.route('/index')
 def index():
     if 'user_name' in session:
-        return render_template('index.html')
+        return render_template('index.html',page="index")
     return redirect(url_for('cover'))
 
 @app.route('/buy_nfts')
 def buy_nfts():
     if 'user_name' in session:
-        return render_template('buy_nfts.html')
+        return render_template('buy_nfts.html',page="buy_nfts")
     return redirect(url_for('cover'))
 
 
 @app.route('/buy_coin')
 def buy_coin():
     if 'user_name' in session:
-        return render_template('buy_coin.html')
+        return render_template('buy_coin.html',page="buy_coin")
     return redirect(url_for('cover'))
 
 @app.route('/option_yield')
 def option_yield():
     if 'user_name' in session:
-        return render_template('option_yield.html')
+        return render_template('option_yield.html',page='option_yield')
     return redirect(url_for('cover'))
 
 @app.route('/logout')
@@ -94,19 +94,19 @@ def logout():
 @app.route('/my_nfts')
 def my_nfts():
     if 'user_name' in session:
-        return render_template('my_nfts.html')
+        return render_template('my_nfts.html',page="my_nfts")
     return redirect(url_for('cover'))
 
 @app.route('/wallet')
 def wallet():
     if 'user_name' in session:
-        return render_template('wallet.html')
+        return render_template('wallet.html',page="wallet")
     return redirect(url_for('cover'))
 
 @app.route('/register_nfts')
 def register_nfts():
     if 'user_name' in session:
-        return render_template('register_nfts.html')
+        return render_template('register_nfts.html',page="register_nfts")
     return redirect(url_for('cover'))
 
 
