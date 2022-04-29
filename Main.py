@@ -1,7 +1,7 @@
 from flask import Flask, render_template  # import flask
 app = Flask(__name__)             # create an application instance called app
 
-
+@app.route("/cover")
 @app.route("/")
 @app.route('/index')
 def index():
