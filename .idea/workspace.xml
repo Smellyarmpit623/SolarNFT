@@ -20,16 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="066b01b7-10cc-434c-ab4e-ee95cb383aee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/my_coin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Solar.db" beforeDir="false" afterPath="$PROJECT_DIR$/Solar.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/cover.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cover.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/my_nfts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/my_nfts.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,10 +51,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="cassandra" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive - St Pauls School/Digital Solution/Working files/Unit 2/IA2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,7 +71,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Administrator\AppData\Local\Programs\Python\Python38\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -89,6 +99,9 @@
       <updated>1650880066903</updated>
       <workItem from="1650880071157" duration="183000" />
       <workItem from="1650880259588" duration="7235000" />
+      <workItem from="1651145359535" duration="14661000" />
+      <workItem from="1651623788827" duration="2439000" />
+      <workItem from="1651630680249" duration="10106000" />
     </task>
     <servers />
   </component>
@@ -105,38 +118,47 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1650885754405">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1651630445481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1650885754405" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1651630445481" />
+    <state x="878" y="228" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1651630088264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="878" y="228" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1651630088264" />
+    <state x="956" y="270" width="655" height="505" key="EnvironmentVariablesDialog" timestamp="1651630072426">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="956" y="270" width="655" height="505" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1651630072426" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1650881904421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1650881904421" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1650886173014">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1651666099575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1650886173014" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1650886173014">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1651666099575" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1651666099575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1650886173014" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1650886173014">
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1651666099575" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1651666099575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1650886173014" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1650886173014">
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1651666099575" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1651666099575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1650886173014" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1651666099575" />
     <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1650885740140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1650885740140" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SolarNFT$SolarNFT.coverage" NAME="SolarNFT Coverage Results" MODIFIED="1650886173007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/SolarNFT$SolarNFT.coverage" NAME="SolarNFT Coverage Results" MODIFIED="1651666099565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

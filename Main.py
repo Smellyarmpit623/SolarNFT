@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,redirect,flash,session,url_for,g
 import sqlite3
 import hashlib
-
+import ssl
 from datetime import datetime,date
 
 import random
@@ -10,8 +10,11 @@ app = Flask(__name__)             # create an application instance called app
 
 app.config['SECRET_KEY'] = 'allahuakbar'
 
+
+
+
 def con_db():
-    con=sqlite3.connect("C:\\Users\\13616\\OneDrive\\Desktop\\Solar\\SolarNFT\\Solar.db",check_same_thread=False)
+    con=sqlite3.connect("C:\\Users\\Administrator\\Documents\\GitHub\\SolarNFT\\Solar.db",check_same_thread=False)
     con.row_factory=sqlite3.Row
     return con
 
@@ -109,10 +112,21 @@ def register_nfts():
         return render_template('register_nfts.html',page="register_nfts")
     return redirect(url_for('cover'))
 
+@app.route('/my_coin')
+def my_coin():
+    if 'user_name' in session:
+        return render_template('my_coin.html',page="my_coin")
+    return redirect(url_for('cover'))
+
+
+context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+
+
+context.load_cert_chain("C:\\Users\\Administrator\\Documents\\GitHub\\SolarNFT\\certificate.crt", "C:\\Users\\Administrator\\Documents\\GitHub\\SolarNFT\\private.key")
 
 if __name__ == "__main__":
-    host='127.0.0.1'
-    port=8080
-    app.run(host,port,debug=True)
+    host='192.168.0.198'
+    port=5000
+    app.run(host,port,debug=True,ssl_context=context)
 
-    #dw
+    #,ssl_context=('C:\\Users\\Administrator\\Documents\\GitHub\\SolarNFT\\cert.pem', 'C:\\Users\\Administrator\\Documents\\GitHub\\SolarNFT\\key.pem')
