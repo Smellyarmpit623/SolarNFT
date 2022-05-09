@@ -70,10 +70,34 @@ def index():
         return render_template('index.html',page="index")
     return redirect(url_for('cover'))
 
+@app.route('/p&l_ana')
+def pl_ana():
+    if 'user_name' in session:
+        return render_template('p&l_ana.html',page="p&l_ana")
+    return redirect(url_for('cover'))
+
 @app.route('/buy_nfts')
 def buy_nfts():
     if 'user_name' in session:
         return render_template('buy_nfts.html',page="buy_nfts")
+    return redirect(url_for('cover'))
+
+@app.route('/arbit')
+def arbit():
+    if 'user_name' in session:
+        return render_template('arbit.html',page="arbit")
+    return redirect(url_for('cover'))
+
+@app.route('/wind_nfts')
+def wind_nfts():
+    if 'user_name' in session:
+        return render_template('wind_nfts.html',page="buy_nfts")
+    return redirect(url_for('cover'))
+
+@app.route('/hydroeletric_nfts')
+def hydroeletric_nfts():
+    if 'user_name' in session:
+        return render_template('hydroeletric_nfts.html',page="buy_nfts")
     return redirect(url_for('cover'))
 
 
@@ -81,6 +105,12 @@ def buy_nfts():
 def buy_coin():
     if 'user_name' in session:
         return render_template('buy_coin.html',page="buy_coin")
+    return redirect(url_for('cover'))
+
+@app.route('/buy_ele')
+def buy_ele():
+    if 'user_name' in session:
+        return render_template('buy_ele.html',page="buy_ele")
     return redirect(url_for('cover'))
 
 @app.route('/option_yield')

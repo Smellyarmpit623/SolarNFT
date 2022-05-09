@@ -30,41 +30,37 @@
                                                   <li class="nav-item dropdown parent"><a class="nav-link {% if page==('wallet') %} active {% endif %} {% if page==('register_nfts') %} active {% endif %}" href="plugins.html" data-toggle="dropdown"><span class="icon s7-plugin"></span><span class="name">My Block Chain</span></a>
                                                               <div class="dropdown-menu mai-sub-nav" role="menu"><a class="dropdown-item" href="/wallet">Wallets</a><a class="dropdown-item" href="/register_nfts">Register NFTs</a>
                                                               </div>
-                                                  </li>
-                                                  <li class="nav-item"><a class="nav-link" href="documentation.html"><span class="icon s7-notebook"></span><span class="name">Documentation</span></a>
-                                                  </li>
+
                                       </ul>
                                     </li>
 
-                                    <li class="nav-item parent {% if page=='buy_nfts' %} open {% endif %}"><a class="nav-link" href="#" role="button" aria-expanded="false"><span class="icon s7-diamond"></span><span>Investments</span></a>
+                                    <li class="nav-item parent {% if page=='buy_nfts' %} open {% endif %} {% if page=='wind_nfts' %} open {% endif %} {% if page=='hydroeletric_nfts' %} open {% endif %} {% if page=='arbit' %} open {% endif %}"><a class="nav-link" href="#" role="button" aria-expanded="false"><span class="icon s7-diamond"></span><span>Investments</span></a>
                                       <ul class="mai-nav-tabs-sub mai-sub-nav nav">
                                                   <li class="nav-item"><a class="nav-link {% if page=='buy_nfts' %} active {% endif %}" href="/buy_nfts"><span class="icon s7-box2"></span><span class="name">Solar-NFTs</span></a>
                                                   </li>
-                                                  <li class="nav-item"><a class="nav-link" href="tables-datatables.html"><span class="icon s7-box2"></span><span class="name">Spot-Futures arbitrage</span></a>
+                                                  <li class="nav-item"><a class="nav-link {% if page=='wind_nfts' %} active {% endif %}" href="/wind_nfts"><span class="icon s7-box2"></span><span class="name">Wind-NFTs</span></a>
                                                   </li>
-                                                  <li class="nav-item"><a class="nav-link" href="tables-filters.html"><span class="icon s7-box2"></span><span class="name">Bi-Directional Charger</span></a>
+                                                  <li class="nav-item"><a class="nav-link {% if page=='hydroeletric_nfts' %} active {% endif %}" href="/hydroeletric_nfts"><span class="icon s7-box2"></span><span class="name">Hydroeletric-NFTs</span></a>
                                                   </li>
+                                                  <li class="nav-item"><a class="nav-link {% if page=='arbit' %} active {% endif %}" href="/arbit"><span class="icon s7-box2"></span><span class="name">Spot-Futures arbitrage</span></a>
+
                                       </ul>
                                     </li>
-                                    <li class="nav-item parent {% if page==('buy_coin') %} open {% endif %} {% if page==('option_yield') %} open {% endif %}"><a class="nav-link" href="#" role="button" aria-expanded="false"><span class="icon s7-portfolio"></span><span>Buy Coins and Option</span></a>
+                                    <li class="nav-item parent {% if page==('buy_coin') %} open {% endif %} {% if page==('option_yield') %} open {% endif %} {% if page==('buy_ele') %} open {% endif %}"><a class="nav-link" href="#" role="button" aria-expanded="false"><span class="icon s7-portfolio"></span><span>Buy Coins and Option</span></a>
                                       <ul class="mai-nav-tabs-sub mai-sub-nav nav">
 
                                           <li class="nav-item"><a class="nav-link {% if page=='buy_coin' %} active {% endif %}" href="/buy_coin"><span class="icon s7-cash"></span><span class="name">Green-Coin Trading</span></a></li>
 
                                           <li class="nav-item"><a class="nav-link {% if page=='option_yield' %} active {% endif %}" href="/option_yield"><span class="icon s7-cash"></span><span class="name">Yield Option</span></a>
                                                   </li>
-                                          <li class="nav-item"><a class="nav-link" href="pages-pricing-tables.html"><span class="icon s7-cash"></span><span class="name">Electricity Trading</span></a>
+                                          <li class="nav-item"><a class="nav-link {% if page=='buy_ele' %} active {% endif %}" href="/buy_ele"><span class="icon s7-cash"></span><span class="name">Electricity Trading</span></a>
                                                   </li>
                                                   </li>
                                       </ul>
                                     </li>
-                                    <li class="nav-item parent "><a class="nav-link" href="#" role="button" aria-expanded="false"><span class="icon s7-display1"></span><span>P&L Analysis</span></a>
+                                    <li class="nav-item parent {% if page==('p&l_ana') %} open {% endif %}"><a class="nav-link" href="#" role="button" aria-expanded="false"><span class="icon s7-display1"></span><span>P&L Analysis</span></a>
                                       <ul class="mai-nav-tabs-sub mai-sub-nav nav">
-                                                  <li class="nav-item"><a class="nav-link" href="charts-flot.html"><span class="icon s7-graph"></span><span class="name">Solar-NFTs</span></a>
-                                                  </li>
-                                                  <li class="nav-item"><a class="nav-link" href="charts-sparklines.html"><span class="icon s7-graph1"></span><span class="name">Options</span></a>
-                                                  </li>
-                                                  <li class="nav-item"><a class="nav-link" href="charts-morris.html"><span class="icon s7-graph3"></span><span class="name">Spot</span></a>
+                                                  <li class="nav-item {% if page=='p&l_ana' %} active {% endif %}"><a class="nav-link" href="/p&l_ana"><span class="icon s7-graph"></span><span class="name">Solar-NFTs</span></a>
                                                   </li>
 
                                       </ul>

@@ -20,13 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="066b01b7-10cc-434c-ab4e-ee95cb383aee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/my_coin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/buy_ele.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/hydroeletric_nfts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/p&amp;l_ana.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solar.db" beforeDir="false" afterPath="$PROJECT_DIR$/Solar.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/cover.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cover.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/my_nfts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/my_nfts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/wallet.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wallet.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,7 @@
       <workItem from="1650880259588" duration="7235000" />
       <workItem from="1651145359535" duration="14661000" />
       <workItem from="1651623788827" duration="2439000" />
-      <workItem from="1651630680249" duration="10106000" />
+      <workItem from="1651630680249" duration="21113000" />
     </task>
     <servers />
   </component>
@@ -137,28 +138,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1650881904421" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1651666099575">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1652097804906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1651666099575" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1651666099575">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1652097804906" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1652097804906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1651666099575" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1651666099575">
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1652097804906" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1652097804906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1651666099575" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1651666099575">
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1652097804906" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1652097804906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1651666099575" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1652097804906" />
     <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1650885740140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1650885740140" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SolarNFT$SolarNFT.coverage" NAME="SolarNFT Coverage Results" MODIFIED="1651666099565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/SolarNFT$SolarNFT.coverage" NAME="SolarNFT Coverage Results" MODIFIED="1652097804898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

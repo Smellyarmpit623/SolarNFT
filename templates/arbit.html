@@ -1,0 +1,63 @@
+
+{% extends'layout.html' %}
+{% block content %}
+<div class="main-content container">
+        <div class="row">
+            <div class="col-sm-6">
+            <div class="tab-container mb-5">
+              <ul class="nav nav-tabs nav-tabs-dark" role="tablist">
+                <li class="nav-item"><a class="nav-link active" href="#d-home" data-toggle="tab" role="tab">Info</a></li>
+                <li class="nav-item"><a class="nav-link" href="#d-profile" data-toggle="tab" role="tab">Current_investment</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="d-home" role="tabpanel">
+                  <h5>Quantitative auto-balanced arbitrage trading bot</h5>
+                  <p> 7 Days return annually: 12%</p>
+                  <p> 30 Days return annually: 11.7% </p>
+                </div>
+                <div class="tab-pane" id="d-profile" role="tabpanel">
+                  <p> Balance: 7000 USDT</p>
+                  <p> Most recent transaction: 28/04/2022</p>
+                </div>
+                </div>
+              </div>
+            </div>
+        <div class="col-md-6">
+            <div class="card card-default">
+              <div class="card-body" style="background-color: black;color: whitesmoke">
+                <form>
+
+                    <div class="form-group row row mt-4">
+
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Amount(822 USDT available)</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                      <input class="form-control form-control-sm" type="number" step="1" placeholder="500">
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-6">
+                      <p class="text-right">
+                        <button class="btn btn-space btn-danger" type="submit">Invest</button>
+                      </p>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    {%  endblock %}
+{% block js_content %}
+<script type="text/javascript">
+      $(document).ready(function(){
+        //-initialize the javascript
+        App.init();
+        App.dashboard();
+      });
+</script>
+{%  endblock %}

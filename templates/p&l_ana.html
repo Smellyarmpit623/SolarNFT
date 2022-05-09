@@ -1,0 +1,66 @@
+{% extends'layout.html' %}
+{% block content %}
+
+
+<div class="main-content container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="widget widget-fullwidth user-develop-chart">
+              <div class="widget-head">
+                <div class="tools"><span class="icon s7-cloud-download"></span><span class="icon s7-refresh-2"></span></div><span class="title">Solar Panel Yield</span>
+              </div>
+              <div class="widget-chart-container">
+                <div class="legend-container" id="develop-chart-legend"></div>
+                <div id="develop-chart" style="height: 225px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="widget-indicators">
+              <div class="indicator-item">
+                <div class="indicator-item-icon">
+                  <div class="icon"><span class="s7-graph1"></span></div>
+                </div>
+                <div class="indicator-item-value"><span class="indicator-value-counter" data-toggle="counter" data-end="36"></span>
+                  <div class="indicator-value-title">Today's Yield(Kw/h)</div>
+                </div>
+              </div>
+              <div class="indicator-item">
+                <div class="indicator-item-icon">
+                  <div class="icon"><span class="s7-graph"></span></div>
+                </div>
+                <div class="indicator-item-value"><span class="indicator-value-counter" data-toggle="counter" data-end="157">0</span>
+                  <div class="indicator-value-title">Total Yield Of The Week</div>
+                </div>
+              </div>
+              <div class="indicator-item">
+                <div class="indicator-item-icon">
+                  <div class="icon"><span class="s7-graph3"></span></div>
+                </div>
+                <div class="indicator-item-value"><span class="indicator-value-counter" data-toggle="counter" data-decimals="1" data-end="17.9">0</span>
+                  <div class="indicator-value-title">Profit Of The Week (as in USDT)</div>
+                </div>
+              </div>
+              <div class="indicator-item">
+                <div class="indicator-item-icon">
+                  <div class="icon"><span class="s7-cart"></span></div>
+                </div>
+                <div class="indicator-item-value"><span class="indicator-value-counter" data-toggle="counter" data-decimals="2" data-end="78,450" data-prefix="$">0</span>
+                  <div class="indicator-value-title">Bids On The Solar Panel</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+
+{%  endblock %}
+{% block js_content %}
+<script type="text/javascript">
+      $(document).ready(function(){
+        //-initialize the javascript
+        App.init();
+        App.dashboard();
+      });
+</script>
+{%  endblock %}
