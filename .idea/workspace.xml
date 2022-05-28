@@ -19,7 +19,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive - Queensland University of Technology/Documents/coding/ws07" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -62,6 +62,7 @@
       <workItem from="1650585573488" duration="1522000" />
       <workItem from="1650702075181" duration="713000" />
       <workItem from="1650858992164" duration="2376000" />
+      <workItem from="1652486095256" duration="1279000" />
     </task>
     <servers />
   </component>
